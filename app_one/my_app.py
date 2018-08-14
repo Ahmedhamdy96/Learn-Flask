@@ -11,6 +11,7 @@ app = Flask(__name__)                    # creating a Flask Object , __name__ is
 
 @app.route("/")                          # decorator to tell Flask what URL should trigger home() function
 @app.route("/home")                      # another decorator to run the home() function => 127.0.0.1:5000/ = 127.0.0.1:5000/home
+@app.route("/home/")                     # same as the above urls  => / == /home == /home/
 def home():
     return " welcome to home page "
 
