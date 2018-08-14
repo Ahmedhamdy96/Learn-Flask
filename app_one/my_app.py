@@ -15,6 +15,9 @@ app = Flask(__name__)                    # creating a Flask Object , __name__ is
 def home():
     return " welcome to home page "
 
+@app.route("/about")
+def about():
+    return "my name is ahmed from mansoura "
 
 
 
