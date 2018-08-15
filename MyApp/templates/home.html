@@ -6,6 +6,18 @@
 <body>
     <h1> H O M E </h1>
     <p>  this is the home page </p>
+    <p> -------------------------------- </p>
+
+
+    <!-- this is the syntax for FOR LOOP from jinja Template Designer Docs -->
+    {% for post in posts %} <!-- the start for FOR -->
+       <h3>     {{ post.title }} </h3>
+       <p> By : {{ post.name }} ON : {{ post.date }} </p>
+       <p>      {{post.post}} </p>
+    {% endfor %}            <!-- the end for FOR -->
+
+
+
 </body>
 
 
